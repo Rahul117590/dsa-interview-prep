@@ -42,7 +42,71 @@ def list_to_dict():
     print(result)
 
 # def dict_to list():
-list_to_dict()
+# def dict_to_tuple():
+#     li={'Naina': 374838, 'Kimi': 838483, 'Sheena': 933839}
+#     for i in li.items():
+#         print(i)
+
+# dict_to_tuple()
+
+
+
+
+# find the missing number no in the array
+'''
+1,2,4,5,6,7'''
+# there are two method to solve this method so 
+
+# summation method  and the xor method 
+# def get_missing_summation(a):
+#     n=a[-1]
+#     sum1=0
+#     total=n*(n+1)//2
+#     sum1=sum(a)
+#     print(total-sum1)
+    
+# a=[1,2,3,4,5,6,7,9]
+# get_missing_summation(a)
+
+
+
+
+
+# find out pairs with given sum value of an array
+'''
+arr=[3,5,16,7,14,8,9,18]
+sum=17''' #firsted sorted the array  use duble pointer method
+
+def twosum(arr,sum):
+    arr.sort()
+    left=0
+    right=len(arr)-1
+    while (left<=right):
+        if(arr[left]+arr[right]>sum):
+            right=right -1
+        elif(arr[left]+arr[right]<sum):
+            left=left+ 1
+        elif(arr[left]+arr[right]==sum):
+            print('value of pair are',arr[left],'&',arr[right])
+            left=left +1
+            right= right-1
+    
+arr=[5,7,4,3,9,8,19,21]
+sum=17
+twosum(arr,sum)
+
+
+
+
+
+
+
+
+
+
+
+   
+
 
 
 
