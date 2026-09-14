@@ -77,23 +77,25 @@ def list_to_dict():
 arr=[3,5,16,7,14,8,9,18]
 sum=17''' #firsted sorted the array  use duble pointer method
 
-def twosum(arr,sum):
-    arr.sort()
-    left=0
-    right=len(arr)-1
-    while (left<=right):
-        if(arr[left]+arr[right]>sum):
-            right=right -1
-        elif(arr[left]+arr[right]<sum):
-            left=left+ 1
-        elif(arr[left]+arr[right]==sum):
-            print('value of pair are',arr[left],'&',arr[right])
-            left=left +1
-            right= right-1
+# def twosum(arr,sum):
+#     arr.sort()
+#     left=0
+#     right=len(arr)-1
+#     while (left<=right):
+#         if(arr[left]+arr[right]>sum):
+#             right=right -1
+#         elif(arr[left]+arr[right]<sum):
+#             left=left+ 1
+#         elif(arr[left]+arr[right]==sum):
+#             print('value of pair are',arr[left],'&',arr[right])
+#             left=left +1
+#             right= right-1
     
-arr=[5,7,4,3,9,8,19,21]
-sum=17
-twosum(arr,sum)
+# arr=[5,7,4,3,9,8,19,21]
+# sum=17
+# twosum(arr,sum)
+
+
 
 
 
